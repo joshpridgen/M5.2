@@ -33,6 +33,17 @@ Color
 
     The text is difficult to read because of the current color scheme. Can you do a test of the current color contrast (text/background), report the results of the test, and then fix it by changing the assigned colors?
 
+        Contrast Ratio 
+            Before Change:
+            2.79:1
+            Failed
+
+            After Change:
+            7.84:1
+            Passed
+
+
+
 Semantic HTML
 
     The content is still not very accessible — report on what happens when you try to navigate it using a keyboard.
