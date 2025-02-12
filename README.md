@@ -42,14 +42,14 @@ Color
             7.84:1
             Passed
 
-
-
 Semantic HTML
 
     The content is still not very accessible — report on what happens when you try to navigate it using a keyboard.
     Can you update the article text to make it easier for screen reader users to navigate?
     The navigation menu part of the site (wrapped in <div class="nav"></div>) could be made more accessible by putting it in a proper HTML semantic element. Which one should it be updated to? Make the update.
     Note: You'll need to update the CSS rule selectors that style the tags to their proper equivalents for the semantic headings. Once you add paragraph elements, you'll notice the styling looks better.
+
+        It goes through the website in a weird order.
 
 The Images
 
