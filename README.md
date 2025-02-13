@@ -49,7 +49,7 @@ Semantic HTML
     The navigation menu part of the site (wrapped in <div class="nav"></div>) could be made more accessible by putting it in a proper HTML semantic element. Which one should it be updated to? Make the update.
     Note: You'll need to update the CSS rule selectors that style the tags to their proper equivalents for the semantic headings. Once you add paragraph elements, you'll notice the styling looks better.
 
-        It goes through the website in a weird order.
+        
 
 The Images
 
@@ -61,6 +61,7 @@ The Audio Player
     The <audio> player isn't accessible to those using older browsers that don't support HTML audio. How can you allow them to still access the audio?
     The Forms
     The <input> element in the search form at the top could do with a label, but we don't want to add a visible text label that would potentially spoil the design and isn't really needed by sighted users. How can you add a label that is only accessible to screen readers?
+
     The two <input> elements in the comment form have visible text labels, but they are not unambiguously associated with their labels — how do you achieve this? Note that you'll need to update some of the CSS rule as well.
     The Show/Hide Comment Control
     The show/hide comment control button is not currently keyboard-accessible. Can you make it keyboard-accessible, both in terms of focusing it using the tab key and activating it using the return key?

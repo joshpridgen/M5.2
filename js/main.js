@@ -1,23 +1,35 @@
-// functionality for showing/hiding the comments section
-
+// Select elements
 const showHideBtn = document.querySelector('.show-hide');
 const commentWrapper = document.querySelector('.comment-wrapper');
 
+// Initially hide the comments section
 commentWrapper.style.display = 'none';
 
-showHideBtn.onclick = function() {
+// Ensure the button is focusable
+showHideBtn.setAttribute('tabindex', '0');
+
+// Toggle comments visibility on click
+showHideBtn.addEventListener('click', toggleComments);
+
+// Allow keyboard activation with Enter key
+showHideBtn.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter' || event.key === ' ') {
+    toggleComments();
+  }
+});
+
+function toggleComments() {
   let showHideText = showHideBtn.textContent;
-  if(showHideText === 'Show comments') {
+  if (showHideText === 'Show comments') {
     showHideBtn.textContent = 'Hide comments';
     commentWrapper.style.display = 'block';
   } else {
     showHideBtn.textContent = 'Show comments';
     commentWrapper.style.display = 'none';
   }
-};
+}
 
-// functionality for adding a new comment via the comments form
-
+// Functionality for adding a new comment
 const form = document.querySelector('.comment-form');
 const nameField = document.querySelector('#name');
 const commentField = document.querySelector('#comment');
@@ -38,9 +50,9 @@ function submitComment() {
   namePara.textContent = nameValue;
   commentPara.textContent = commentValue;
 
-  list.appendChild(listItem);
   listItem.appendChild(namePara);
   listItem.appendChild(commentPara);
+  list.appendChild(listItem);
 
   nameField.value = '';
   commentField.value = '';
